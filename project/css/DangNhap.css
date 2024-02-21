@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    height: 80.5vh;
+    background-image: url('../ảnh/d0dfbef45b5a7487e72458688b4f241c.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.frame-log-in {
+    width: 400px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    margin: auto;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0,  0.2);
+    margin-top: 10%;
+}
+
+.frame-log-in-top {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.frame-log-in-button {
+    height: 84.8%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.button-log-in1 {
+    margin: 20px;
+    border: 1px solid #333;
+    width: 300px;
+    height: 30px;
+    background-color: #bf2c24;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.button-log-in2 {
+    margin: 20px;
+    border: 1px solid #333;
+    width: 100px;
+    height: 30px;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+}
+
+.back-register{
+    width: 30%;
+    height: 30px;    
+    background-color: #333;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+.log-in-footer a{
+    color: blue;
+}
+
+.error-log-in{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    height: 50px;
+    background-color: #ed6a63;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}

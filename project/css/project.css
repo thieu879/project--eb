@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: bisque;
+    display: flex;
+}
+li{
+    list-style: none;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('../ảnh/Nature-4K-Wallpaper-2160x3840-22-300x533.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* ----------------header----------------- */
+.header1 {
+    width: 100%;
+    text-align: center;
+    background-color: blanchedalmond;
+}
+.header2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.search {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.search:hover{
+    background-color: grey;
+    border: none;
+}
+.register {
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.register:hover{
+    background-color: grey;
+    border: none;
+}
+.log-in {
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    color: aliceblue;
+    border-radius: 5px;
+}
+.log-in:hover{
+    background-color: grey;
+    border: none;
+}
+/* ----------------nav--------------- */
+.nav {
+    width: 100%;
+    height: 40px;
+    background-color: grey;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav1 {
+    width: auto;
+    height: 40px;
+    background-color: grey;
+    border: none;
+    color: aliceblue;
+}
+
+.nav1:hover{
+    background-color: black;
+}
+
+.nav2 {
+    width: auto;
+    height: 40px;
+    background-color: grey;
+    border: none;
+    color: aliceblue;
+}
+
+.nav2:hover {
+    background-color: black;
+}
+
+.nav3 {
+    width: auto;
+    height: 40px;
+    background-color: grey;
+    border: none;
+    color: aliceblue;
+}
+
+.nav3:hover {
+    background-color: black;
+}
+
+.nav4 {
+    width: auto;
+    height: 40px;
+    background-color: grey;
+    border: none;
+    color: aliceblue;
+}
+
+.nav4:hover {
+    background-color: black;
+}
+
+.nav5 {
+    width: auto;
+    height: 40px;
+    background-color: grey;
+    border: none;
+    color: aliceblue;
+}
+
+.nav5:hover {
+    background-color: black;
+}
+
+.nav6 {
+    width: auto;
+    height: 40px;
+    background-color: grey;
+    border: none;
+    color: aliceblue;
+}
+
+.nav6:hover {
+    background-color: black;
+}
+
+/* ----------------filter-form------------------ */
+
+.filter-form {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: none;
+
+}
+
+.filter-form-content {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+}
+
+.filter-form-content h2{
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.filter-form-content span{
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    border: 1px solid black;
+    right: 12px;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 20px;
+    border-radius: 5px;
+}
+
+.filter-form-content span:hover{
+    background-color: red;
+}
+
+.filter-form-content form input,select{
+    height: 40px;
+    display: block;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.filter-form-content form button{
+    margin-top: 20px;
+    width: 70%;
+    height: 40px;
+    color: #ddd;
+    background-color: black;
+}
+.filter-form-content form button:hover{
+    background-color: gray;
+    color: black;
+    border: none;
+}
+/* ----------------------------------------header end------------------------------ */
+
+/* ---------------------------------------slider start--------------------------- */
+
+.slider {
+    padding: 20px 0;
+    height: 400px;
+}
+
+.contener {
+    margin: auto;
+    width: 50%;
+    position: relative;
+}
+
+.slide-content-top {    
+    width: 100%;
+    height: 400px;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.slide-content-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.slide-content-bottom {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    background-color: #fff;
+}
+
+.slide-content-bottom li{
+    width: 20%;
+    text-align: center;
+    line-height: 38px;
+    position: relative;
+}
+
+.slide-content-bottom li.active{
+    font-weight: 900;
+}
+
+.slide-content-bottom li::before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #ddd;
+    right: 0;
+}
+.slide-content-bottom li.active{
+    border-top: 5px solid red;
+}
+
+.slide-content-top-next-back {
+    position: absolute;
+    top: 45%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slide-content-top-next-back i{
+    color: #333;
+    font-size: 40px ;
+    height: 50px;
+    width: 25px;
+    background-color: rgb(117, 198, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px;
+    opacity: 0;
+}
+.slide-content-top img{
+    position: absolute;
+}
+.slide-content-top a:nth-child(2) img{
+    transform: translateX(100%);
+}
+.slide-content-top a:nth-child(3) img{
+    transform: translateX(200%);
+}
+.slide-content-top a:nth-child(4) img{
+    transform: translateX(300%);
+}
+.slide-content-top a:nth-child(5) img{
+    transform: translateX(400%);
+}
+
+.slide-content {
+    position: relative;
+    overflow: hidden;
+}
+.slide-content:hover i{
+    opacity: 1;
+}
+/* ----------------------slide end -------------------------------------- */
+
+/* ------------------------Content start --------------------------------- */
+.Content-main{
+    padding: 100px 0;
+}
+
+.frame-main {
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.frame{
+    width: 200px;
+    height: 300px;
+    background-color: #fff;
+    border: 3px solid black;
+
+}
+
+.frame-top img{
+    width: 100%;
+}
+
+.frame-buttom {}
+
+/* -------------------------------------content end------------------------------- */
+
+/* ------------------------------------content2 start------------------------------ */
+
+.content2-main {
+    width: 100%;
+    color: #fff;
+    padding: 20px 0;
+    
+}
+
+.content2-main a{
+    color: #fff;
+}
+.content2 {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+table {
+    border-collapse: collapse;
+    width: 600px;
+}
+
+td,th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.content2-left {}
+
+.content2-right {}
+
+/* -------------------------------------content end--------------------------------- */
+
+/* -------------------------------------footer start------------------------------- */
+.footer {
+    margin-top: 30px;
+}
+.content-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-left {
+    color: black;
+}
+
+.content-right {
+    color: black;
+}
+
+input {
+    color: black;
+    background-color: aliceblue;
+}
+
+
+textarea {  
+    color: black;
+    background-color: aliceblue;
+}
+
+
+.Button-4 {
+    color: aliceblue;
+    width: 300px;
+    background: blue;
+    border-radius: 20px;
+}
+
+.Button-4:hover {
+    background: black;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 20px;
+}

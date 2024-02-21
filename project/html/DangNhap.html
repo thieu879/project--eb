@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập</title>
+    <link rel="stylesheet" href="../css/DangNhap.css">
+</head>
+<body>
+    <div class="frame-log-in">
+        <div class="frame-log-in-top">
+            <div class="error-log-in" id="errorLogIn" style="display: none;">
+                <b></b>Nhập sai rồi nhập lại đi thằng ngáo này </b>
+            </div>
+            <h2>Đăng Nhập</h2>
+            <p>Hãy để chúng tôi đồng hành cùng bạn</p>
+        </div>
+        <div class="frame-log-in-button">
+            <form action="" onsubmit="logIn(event)" id="formLogIn">
+                <div>
+                    <label for="">Tên đăng nhập:</label><br>
+                    <input id="userName" type="text" style="height: 30px; width: 300px;border-radius: 10px;padding: 10px;" placeholder="*Nhập tên đăng nhập" required="" oninvalid="this.setCustomValidity('Tên đăng nhập không thể để trống')" oninput="this.setCustomValidity('')">
+                </div>
+                <div>
+                    <label for="">Mật khẩu:</label><br>
+                    <input id="password" type="password" style="height: 30px; width: 300px;border-radius: 10px; padding: 10px;" placeholder="*Nhập mật khẩu" required="" oninvalid="this.setCustomValidity('Mật khẩu không thể để trống')" oninput="this.setCustomValidity('')">
+                </div>
+                <button class="button-log-in1">Đăng Nhập </button>
+                <div class="log-in-footer">
+                    <a href="">Quên Mật Khẩu</a>
+                    <hr>
+                    <button class="button-log-in2">Tạo Tài Khoản </button>
+                </div>
+                <button type="button" onclick="backRegister()" class="back-register">Quay lại đăng ký</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../js/DangNhap.js"></script>
+</html>

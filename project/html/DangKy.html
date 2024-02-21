@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../css/DangKy.css">
+</head>
+<body>
+    <div  class="frame-register">
+        <div class="frame-register-top">
+            <h2>Đăng ký dùng thử</h2>
+            <p>Hãy để chúng tôi đồng hành cùng bạn</p>
+        </div>
+        <div class="frame-register-button">
+            <form action="" onsubmit="register()">
+                <div>
+                    <label for="">Tên đăng nhập:</label><br>
+                    <input id="userName" type="text" style="height: 30px; width: 300px;border-radius: 10px;" placeholder="*Nhập tên đăng nhập" required="" oninvalid="this.setCustomValidity('Tên đăng nhập không thể để trống')" oninput="this.setCustomValidity('')">
+                </div>
+                <div>
+                    <label for="">Email:</label><br>
+                    <input id="email" type="email" style="height: 30px; width: 300px;border-radius: 10px;" placeholder="*Nhập Email" required="" oninvalid="this.setCustomValidity('Email không thể để trống')" oninput="this.setCustomValidity('')">
+                </div>
+                <div>
+                    <label for="">Số điện thoại:</label><br>
+                    <input id="phoneNumbers" type="tel" style="height: 30px; width: 300px;border-radius: 10px;" placeholder="*Nhập Số Điện Thoại" required="" oninvalid="this.setCustomValidity('Số điện thoại không thể để trống')" oninput="this.setCustomValidity('')">
+                </div>
+                <div>
+                    <label for="">Mật khẩu:</label><br>
+                    <input id="password" type="password" style="height: 30px; width: 300px;border-radius: 10px;" placeholder="*Nhập mật khẩu" minlength="8" required="" oninvalid="this.setCustomValidity('Mật khẩu không thể để trống')" oninput="this.setCustomValidity('')">
+                </div>
+                <div>
+                    <label for="">Nhập lại mật khẩu:</label><br>
+                    <input type="password" style="height: 30px; width: 300px;border-radius: 10px;" placeholder="*Nhập lại mật khẩu" required="" oninvalid="this.setCustomValidity('Nhập lại mật khẩu không thể để trống')" oninput="this.setCustomValidity('')">
+                </div>
+                <button class="button-register">Đăng Ký dùng thử</button>
+                <button type="button" onclick="backLogIn()" class="back-log-in">Quay lại đăng nhập</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="../js/DangKy.js"></script>
+</html>

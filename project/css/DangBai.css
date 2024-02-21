@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: bisque;
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('../ảnh/Nature-4K-Wallpaper-2160x3840-22-300x533.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* ----------------header----------------- */
+.header1 {
+    width: 100%;
+    height: 100px;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ----------------------------------------header end------------------------------ */
+/* --------------------------------------content start------------------------------ */
+
+
+
+/* ---------------------------------------content end------------------------------- */
+
+
+/* -------------------------------------footer start------------------------------- */
+.footer {
+    margin-top: 30px;
+}
+
+.content-footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.content-left {
+    color: black;
+}
+
+.content-right {
+    color: black;
+}
+
+input {
+    color: black;
+    background-color: aliceblue;
+}
+
+
+textarea {
+    color: black;
+    background-color: aliceblue;
+}
+
+
+.Button-4 {
+    color: aliceblue;
+    width: 300px;
+    background: blue;
+    border-radius: 20px;
+}
+
+.Button-4:hover {
+    background: black;
+}
+
+.footer-icon {
+    display: flex;
+    gap: 20px;
+}
+
+/* --------------------------------footer end --------------------------------------- */
